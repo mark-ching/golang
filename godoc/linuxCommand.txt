@@ -1,0 +1,14 @@
+1.清屏：
+	$ clear
+	Ctrl + L
+2.文件/夹移动、改名：
+	$ mv a.txt /usr/local/  移动
+	$ mv a.txt b.txt	改名
+3.文件/夹复制：
+	$ cp a.txt /usr/local/
+	$ cp -Rf /home/jzl/ /usr/local/ 强制递归复制
+4.解压：
+	$ tar -xvf xxx.tar.zg   x是解压，z是压缩，v查看信息
+5.查看隐藏文件：
+	$ ll -a
+6.
