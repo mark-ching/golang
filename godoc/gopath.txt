@@ -1,0 +1,20 @@
+1.设置GOPATH：
+	$ export GOPATH=/home/jzl/Go/golang
+2.以上 $GOPATH 目录约定有三个子目录：
+	src 存放源代码（比如：.go .c .h .s等）
+	pkg 编译后生成的文件（比如：.a）
+	bin 编译后生成的可执行文件（为了方便，可以把此目录加入到 $PATH 变量中）
+3.设置PATH：
+	$ sudo vim /etc/profile
+	export PATH="/home/jzl/Go/golang/bin:&PATH"
+4.安装：
+	$ go install 在对应的应用包目录
+	$ go install calculate 任何包下可执行，指明了目录名
+5.编译：
+	$ go build xxx.go
+	$ go build calculate
+6.安装和编译的区别：
+	同样是生成可执行文件，但是install产生的可执行文件在bin/中，而build产生的可执行文件在当前目录下。
+7.由于PATH中添加了&GOPATH/bin，所以可以直接调用其中的可执行文件：
+	$ calculate 1+2
+8.bin目录下面存的是编译之后可执行的文件，pkg下面存放的是函数包，src下面保存的是应用源代码。
