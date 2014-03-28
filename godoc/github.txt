@@ -25,3 +25,8 @@
 	$ git log：查看提交记录（即历史的 commit 记录）。
 	$ git status：当前修改的状态，是否修改了还没提交，或者那些文件未使用。
 	$ git reset <log>：恢复到历史版本。
+9.git配置：
+	$ git config --global push.default matching
+	$ git config --global push.default simple
+	$ git config --global user.name mark-ching
+	$ git config --global user.email johnny.mark.ching@gmail.com
